@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ignaski/source/repos/aether/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

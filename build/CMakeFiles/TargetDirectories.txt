@@ -1,0 +1,3 @@
+/home/ignaski/source/repos/aether/build/CMakeFiles/aether.dir
+/home/ignaski/source/repos/aether/build/CMakeFiles/edit_cache.dir
+/home/ignaski/source/repos/aether/build/CMakeFiles/rebuild_cache.dir
