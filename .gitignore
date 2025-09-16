@@ -1,0 +1,51 @@
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.dylib
+*.pyc
+*.pyo
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+.env
+
+# Others
+*.out
+*.pid
+*.tmp
+*.temp
+*.cache
+*.lock

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ignaski/source/repos/aether/dir/include
+CXX_INCLUDES = -I/home/ignaski/source/repos/aether/dir/include -I/home/ignaski/source/repos/aether/src/engine -I/home/ignaski/source/repos/aether/src/head
 
 CXX_FLAGS = -std=gnu++20
 
