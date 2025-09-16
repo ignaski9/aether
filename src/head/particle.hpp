@@ -1,5 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "engine/engine.hpp"
 #include<math.h>
 
 constexpr float PARTICLE_SIZE = 20.0f;
@@ -22,10 +23,14 @@ static const float GRAVITION_CONST = 6.7 * 10;
 
 struct Particle {
 
+	Engine engine;
+
 	static const int mass = PARTICLE_MASS;
 	sf::Vector2f velocity, acceleration, position, position0;
 
 	sf::CircleShape shape;
+	sf::Vector2i posI = engine.vec2fToI(position);
+	size_t HashNumber{}; 
 
 	void ParticleInit(sf::Vector2f pos, sf::CircleShape s) {
 		velocity = { 0.0f, 0.0f };
@@ -33,12 +38,14 @@ struct Particle {
 		position = pos;
 		position0 = pos;
 		shape = s;
+		posI = engine.vec2fToI(position);
+		HashNumber = engine.getHashNumber(posI);
 	};
 };
 
 struct ParticleSystem {
 	static std::vector<Particle> Particles;
-
+	static std::vector< size_t, Particle> HashGrid;
 
 	sf::Vector2f CalculateDistance(Particle p1, Particle p2) {
 		float deltaY = p1.position.y - p2.position.y;

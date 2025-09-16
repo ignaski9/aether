@@ -1,5 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include "head/particle.hpp"
+#include "engine/engine.hpp"
 
 std::vector<Particle> ParticleSystem::Particles;
 
